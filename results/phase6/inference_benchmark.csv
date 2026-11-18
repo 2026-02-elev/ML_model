@@ -1,0 +1,2 @@
+device,not_a_pi_measurement,status,ridge_seconds_per_vector_on_this_pc,logistic_seconds_per_vector_on_this_pc,target_device,nfr01
+PC_proxy,True,EDGE_BENCHMARK_PENDING,1.49190624995299e-05,5.1855703122782874e-06,"Raspberry Pi Zero 2 WH (1 GHz Cortex-A53 x4, 512 MB). This run did not open a device.","NFR-01 is 5 seconds from anomaly to protection, including sensing, decision, and actuation. A PC matrix product is not that measurement."

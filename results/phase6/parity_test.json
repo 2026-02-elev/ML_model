@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED",
+  "checks": [
+    {
+      "model": "ridge",
+      "max_abs_diff_v": 0.0,
+      "n_vectors": 64,
+      "passed": true
+    },
+    {
+      "model": "logistic",
+      "class_mismatches": 0,
+      "n_vectors": 64,
+      "passed": true
+    }
+  ]
+}

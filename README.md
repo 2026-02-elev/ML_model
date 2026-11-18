@@ -93,7 +93,9 @@ ML_model/
 │   ├── MODEL_COMPARISON.md
 │   ├── MODEL_SELECTION.md
 │   ├── DATA_LIMITATIONS.md
-│   └── REPRODUCIBILITY.md
+│   ├── REPRODUCIBILITY.md
+│   ├── TRAINING_INFERENCE_COST.md
+│   └── REPORT_FILE_MAP.md
 ├── models/
 │   ├── checksums.json
 │   ├── regression/ridge_numpy.npz
@@ -110,6 +112,15 @@ ML_model/
 │   └── verify_models.py
 ├── examples/
 ├── results/
+│   ├── model_comparison.csv
+│   ├── event_detection_comparison.csv
+│   ├── classification_comparison.csv
+│   ├── previous_experiment_comparison.csv
+│   ├── regression_metrics.csv
+│   ├── figures/
+│   └── phase6/
+│       ├── parity_test.json
+│       └── inference_benchmark.csv
 └── tests/
 ```
 
@@ -252,7 +263,7 @@ NFR-01의 5초는 감지, 판단, 보호를 포함한 시간이다. 이 저장�
 
 [CellGuard 최종보고서](docs/FINAL_REPORT.md)
 
-보고서의 문장과 수치는 그대로 두었다. 선행 실험과 이번 Phase 1~6 결과는 보고서 3절과 `results/previous_experiment_comparison.csv`에서 구분한다.
+보고서의 문장과 수치는 그대로 두었다. 보고서가 적은 파일 이름과 이 저장소 경로의 대응은 [docs/REPORT_FILE_MAP.md](docs/REPORT_FILE_MAP.md)에 있다. 선행 실험과 이번 Phase 1~6 결과는 보고서 3절과 `results/previous_experiment_comparison.csv`에서 구분한다. 학습 시간과 PC 추론 시간은 [docs/TRAINING_INFERENCE_COST.md](docs/TRAINING_INFERENCE_COST.md)에 있다.
 
 ## 16. 개발 환경 및 재현성
 
