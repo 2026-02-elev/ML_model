@@ -1,0 +1,22 @@
+{
+  "synthetic_examples_are_not_measurements": true,
+  "timeseries": {
+    "required": ["run_id", "cell_1_voltage_v", "cell_2_voltage_v", "cell_3_voltage_v", "cell_4_voltage_v"],
+    "time": "timestamp (ISO-8601 or seconds) or t_s (seconds)",
+    "optional": ["cell_1_temperature_c", "cell_2_temperature_c", "cell_3_temperature_c", "cell_4_temperature_c", "cell_voltage_spread_v"],
+    "cell_order": ["cell_1=H_", "cell_2=H8", "cell_3=H7", "cell_4=H1"],
+    "units": {"voltage": "volt", "temperature": "celsius", "t_s": "seconds", "spread": "volt, max(cell voltage) - min(cell voltage)"},
+    "sampling": "about 1 Hz. Gaps outside (0.5, 2.0] seconds are not scored.",
+    "history": "The first sample of a run has no 1-step prediction. Delta voltage uses the sample before the source sample when that gap is also inside (0.5, 2.0] s, otherwise delta voltage and dt_prev are 0.",
+    "missing": "Temperature may be missing and is replaced by the training median inside the scaler. Voltage may not be missing or non-positive.",
+    "current": "Do not supply pack current. None was measured, and null was not treated as 0 A."
+  },
+  "load_esr": {
+    "required": [
+      "rest_cell_1_voltage_v", "rest_cell_2_voltage_v", "rest_cell_3_voltage_v", "rest_cell_4_voltage_v",
+      "load_cell_1_voltage_v", "load_cell_2_voltage_v", "load_cell_3_voltage_v", "load_cell_4_voltage_v"
+    ],
+    "optional": ["run_id"],
+    "meaning": "One row is one already paired rest sample and load sample. This file is not a 1 Hz CGT series."
+  }
+}

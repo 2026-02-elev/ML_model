@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "not_a_measured_evaluation": true,
+  "n_rows": 40,
+  "n_scored": 39,
+  "n_alarms": 8,
+  "first_scored_prediction_v": [
+    0.5089567716594146,
+    0.5155162440170326,
+    0.5291180409889048,
+    0.5352234134119699
+  ],
+  "load_esr_score": 29.87400761290682,
+  "load_esr_cell": 4,
+  "load_esr_alarm": true,
+  "logistic_windows": 17,
+  "logistic_first_label": "HEAT"
+}

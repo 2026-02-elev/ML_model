@@ -1,0 +1,14 @@
+model,split,label,events,onset_recall,already_active,mean_delay_s,cell_match_rate,normal_alarm_onsets,meaning,normal_predicted_fault_rate,false_alarms,normal_loads
+baseline_detector_persistence,val,ESR,11,0.1818181818181818,0.0,3.000339984893799,1.0,2.0,"commanded condition, not verified physical fault",,,
+baseline_detector_persistence,val,LEAK,0,,0.0,,,2.0,"commanded condition, not verified physical fault",,,
+baseline_detector_persistence,val,HEAT,10,0.6,0.0,17.31024972597758,1.0,2.0,"commanded condition, not verified physical fault",,,
+baseline_detector_persistence,test,ESR,19,0.1052631578947368,0.0,2.995903968811035,1.0,1.0,"commanded condition, not verified physical fault",,,
+baseline_detector_persistence,test,LEAK,10,0.0,0.0,,,1.0,"commanded condition, not verified physical fault",,,
+baseline_detector_persistence,test,HEAT,17,0.5294117647058824,0.0,17.202529774771797,1.0,1.0,"commanded condition, not verified physical fault",,,
+classifier_hist_gradient_boosting,val,ESR,11,0.7272727272727273,2.0,1.7478385865688324,0.5,,"commanded condition, not verified physical fault",0.0093283582089552,,
+classifier_hist_gradient_boosting,val,LEAK,0,,0.0,,,,"commanded condition, not verified physical fault",0.0093283582089552,,
+classifier_hist_gradient_boosting,val,HEAT,10,0.9,0.0,2.3304774496290417,0.5555555555555556,,"commanded condition, not verified physical fault",0.0093283582089552,,
+classifier_hist_gradient_boosting,test,ESR,19,0.8421052631578947,2.0,1.997774571180344,0.375,,"commanded condition, not verified physical fault",0.0086437538588186,,
+classifier_hist_gradient_boosting,test,LEAK,10,0.8,0.0,14.735111236572266,0.75,,"commanded condition, not verified physical fault",0.0086437538588186,,
+classifier_hist_gradient_boosting,test,HEAT,17,1.0,0.0,2.7031579157885384,0.4117647058823529,,"commanded condition, not verified physical fault",0.0086437538588186,,
+load_esr,test,ESR,19,1.0,,,1.0,,"commanded ESR during a load pulse, not verified physical ESR",,0.0,169.0

@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "not_a_measurement": true,
+  "description": "One schema-shaped row. The demo series is examples/example_timeseries.csv.",
+  "run_id": "synthetic-demo",
+  "t_s": 1.0,
+  "cell_1_voltage_v": 0.5,
+  "cell_2_voltage_v": 0.51,
+  "cell_3_voltage_v": 0.52,
+  "cell_4_voltage_v": 0.53,
+  "cell_1_temperature_c": 25.0,
+  "cell_2_temperature_c": 25.0,
+  "cell_3_temperature_c": 25.0,
+  "cell_4_temperature_c": 25.0,
+  "cell_order": ["cell_1=H_", "cell_2=H8", "cell_3=H7", "cell_4=H1"],
+  "units": {"voltage": "V", "temperature": "C", "t_s": "s"}
+}

@@ -1,0 +1,22 @@
+{
+  "selected_model": "autoencoder",
+  "status": "WEIGHTS_NOT_PERSISTED",
+  "fit_status": "COMPLETED",
+  "steps": 16,
+  "channels": "delta voltage x4, delta temperature x4, spread, from the first step of the sequence",
+  "threshold": 0.1745047409821838,
+  "threshold_rule": "validation normal reconstruction quantile 0.995",
+  "test": {
+    "normal_windows": 9718,
+    "normal_alarm_rate": 0.006174109899156205,
+    "auroc": 0.4946321057345614,
+    "pr_auc": 0.26279260444494035,
+    "ESR_window_recall": 0.17105263157894737,
+    "ESR_windows": 152,
+    "LEAK_window_recall": 0.0,
+    "LEAK_windows": 660,
+    "HEAT_window_recall": 0.3931034482758621,
+    "HEAT_windows": 435
+  },
+  "reason": "The autoencoder was fit in memory and its weights were not saved. This release does not refit it."
+}

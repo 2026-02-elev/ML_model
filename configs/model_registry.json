@@ -1,0 +1,75 @@
+{
+  "model_version": "measured-local-0",
+  "seed": 20261111,
+  "source_experiment": "cellguard-real-data Phase 1-6, report timestamp 2026-11-11T13:42:10Z",
+  "tasks": {
+    "voltage": {
+      "role": "2",
+      "selected_model": "ridge",
+      "alpha": 0.1,
+      "file": "models/regression/ridge_numpy.npz",
+      "runnable": true,
+      "selection_rule": "lowest validation MAE among completed 1-step models",
+      "validation_mae_v": 0.0036587928360879915,
+      "test_mae_v": 0.004108472472556147,
+      "test_rmse_v": 0.005987774501881316,
+      "test_r2": 0.9982278115528822,
+      "test_normal_pairs": 10331
+    },
+    "anomaly": {
+      "role": "2",
+      "selected_model": "persistence",
+      "temp_mode": "rise",
+      "alpha_1s": 0.2,
+      "file": "models/anomaly/thresholds.json",
+      "runnable": true,
+      "selection_rule": "validation: fewer normal onsets, then higher commanded HEAT onset recall, then LEAK",
+      "volt_threshold_v": 0.025206015466180683,
+      "temp_threshold_c": 0.7,
+      "test_normal_alarm_onsets": 1,
+      "test_normal_hours": 4.26051481280062,
+      "test_esr_onset": "2/19",
+      "test_leak_onset": "0/10",
+      "test_heat_onset": "9/17",
+      "test_heat_mean_delay_s": 17.202529774771797
+    },
+    "classifier": {
+      "role": "3",
+      "selected_model": "hist_gradient_boosting",
+      "window_s": 30.0,
+      "class_weight": "sqrt",
+      "runnable": false,
+      "reason": "WEIGHTS_NOT_PERSISTED",
+      "file": null,
+      "serialized_reference_not_selected": "models/classifier/logistic_reference.npz",
+      "selection_rule": "highest validation macro F1, then lower normal-window fault rate",
+      "validation_macro_f1": 0.6369627307090966,
+      "test_macro_f1": 0.7575336905637502,
+      "test_normal_predicted_fault_rate": 0.008643753858818687,
+      "test_event_onset": {"ESR": "16/19", "LEAK": "8/10", "HEAT": "17/17"}
+    },
+    "autoencoder": {
+      "role": "6",
+      "selected_model": "autoencoder",
+      "runnable": false,
+      "reason": "WEIGHTS_NOT_PERSISTED",
+      "file": null,
+      "steps": 16,
+      "threshold": 0.1745047409821838,
+      "test_auroc": 0.4946321057345614,
+      "test_pr_auc": 0.26279260444494035
+    },
+    "load_esr": {
+      "role": "load",
+      "selected_model": "excess_zscore",
+      "file": "models/load_esr/parameters.json",
+      "runnable": true,
+      "requires": "paired rest CGT voltage and load CGP voltage",
+      "not_ohmic_esr": true,
+      "test_event_recall": "19/19",
+      "test_cell_match_rate": 1.0,
+      "test_false_alarms": "0/169",
+      "threshold": 3.4429849433264446
+    }
+  }
+}

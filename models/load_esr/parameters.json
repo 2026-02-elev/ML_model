@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETED",
+  "label_meaning": "COMMANDED_ESR_LOAD_NOT_VERIFIED_PHYSICAL_ESR",
+  "mu_excess_v": [
+    -0.02112548638132296,
+    0.009403696498054483,
+    -0.005154669260700382,
+    0.006111867704280144
+  ],
+  "sigma_excess_v": [
+    0.011152345823656885,
+    0.008464618853091977,
+    0.006269320921183609,
+    0.0054859774563662264
+  ],
+  "sigma_floor_v": 0.0001,
+  "threshold": 3.4429849433264446,
+  "threshold_rule": "max validation normal score + 1e-6, so validation false alarms are zero by construction",
+  "val_normal_score_max": 3.4429839433264444,
+  "paired_loads": 1194,
+  "pair_dt_ms_median": 494.0,
+  "published_test": {
+    "normal_loads": 169,
+    "false_alarms": 0,
+    "false_alarm_rate": 0.0,
+    "esr_events": 19,
+    "esr_detected": 19,
+    "esr_event_recall": 1.0,
+    "cell_match_rate": 1.0
+  }
+}

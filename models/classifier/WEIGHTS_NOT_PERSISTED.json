@@ -1,0 +1,9 @@
+{
+  "selected_model": "hist_gradient_boosting",
+  "status": "WEIGHTS_NOT_PERSISTED",
+  "window_s": 30.0,
+  "class_weight": "sqrt",
+  "validation_macro_f1": 0.6369627307090966,
+  "test_macro_f1": 0.7575336905637502,
+  "reason": "Phase 4 fit the selected classifier in memory and did not write its weights. This release does not refit it. logistic_reference.npz is a different model."
+}

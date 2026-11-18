@@ -1,0 +1,12 @@
+{
+  "model": "persistence",
+  "alpha": 0.2,
+  "temp_mode": "rise",
+  "quantile": 0.999,
+  "volt_threshold_v": 0.025206015466180683,
+  "temp_threshold_c": 0.7,
+  "val_normal_onsets": 2,
+  "val_heat_onset_recall": 0.6,
+  "val_leak_onset_recall": null,
+  "val_esr_onset_recall": 0.18181818181818182
+}

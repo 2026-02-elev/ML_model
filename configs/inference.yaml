@@ -1,0 +1,40 @@
+model_version: measured-local-0
+seed: 20261111
+sampling_hz: 1
+pair_dt_min_s: 0.5
+pair_dt_max_s: 2.0
+max_gap_s: 2.5
+temp_baseline_tau_s: 300
+classifier_window_s: 30
+window_min_fraction: 0.75
+window_min_samples: 8
+grace_s: 20
+cell_order:
+  - cell_1
+  - cell_2
+  - cell_3
+  - cell_4
+cell_channels:
+  cell_1: H_
+  cell_2: H8
+  cell_3: H7
+  cell_4: H1
+point_features:
+  - v1
+  - v2
+  - v3
+  - v4
+  - temp1
+  - temp2
+  - temp3
+  - temp4
+  - spread
+  - dv1
+  - dv2
+  - dv3
+  - dv4
+  - dt_prev
+notes:
+  current: not an input
+  calibration: NOMINAL_UNCALIBRATED
+  labels: commanded conditions, physical_fault_verified false

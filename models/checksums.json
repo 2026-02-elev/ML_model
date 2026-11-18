@@ -1,0 +1,8 @@
+{
+  "models/regression/ridge_numpy.npz": "115bcb1a80ae8e8059d6aca4c9a54a7949ee006cb5a99e0b0e7f3095906b04fd",
+  "models/classifier/logistic_reference.npz": "3424c510984b98b22601a01627b27941f55084745eedab06373926821cc0e5d5",
+  "models/anomaly/thresholds.json": "6a6fd4831e466b50462f7a9c42ef5a0ce4c638d28d8e4e1f2cba6357c1ddd003",
+  "models/load_esr/parameters.json": "0dc7a18bee857c9ba51abf0d31b169fe8cb220035d4a3917e4a73f24142f4bd8",
+  "models/classifier/WEIGHTS_NOT_PERSISTED.json": "5e1c5ad825f0fb7d8a040111b8e4d87281f23d67dcf2a8695f52363bc7214f52",
+  "models/autoencoder/WEIGHTS_NOT_PERSISTED.json": "ecaeb4586ea537115728c89368b1863ce6968051932796af039d11e01a61ca44"
+}
